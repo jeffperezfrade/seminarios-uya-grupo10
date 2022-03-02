@@ -6,4 +6,4 @@
 ### Jeff Pérez Frade
 ### Diego Rodríguez Pérez
 ***
-![Seminario1](Seminario1.pdf)
+[Seminario1](Seminario1.pdf)
