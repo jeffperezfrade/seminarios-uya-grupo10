@@ -1,4 +1,4 @@
-# SEMINARIOS
+# SEMINARIOS Grupo 10
 
 ***
 ### Universidad de La Laguna
