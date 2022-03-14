@@ -1,0 +1,63 @@
+body {
+  background-color: aqua;
+}
+
+a:hover {
+  color: red;
+}
+a,
+a:visited {
+  color: blue;
+}
+
+.tabla a {
+  color: green;
+}
+.menu1 {
+  height: 100px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.nav_bar {
+  float: left;
+}
+.item_menu {
+  margin-top: 35px;
+  margin-bottom: 0.7em;
+  display: block;
+  text-align: center;
+  padding: 0.3em;
+  text-decoration: none;
+}
+
+.item_menu:hover {
+  color: red;
+  background-color: #111;
+}
+p {
+  margin-top: 0.5em;
+  font-family: Arial;
+  color: black;
+  font-size: 1.5em;
+}
+header {
+  height: 100px;
+  background-image: url("../images/cabecera.avif");
+}
+footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 100px;
+}
+.enlaces {
+    width: 130px;
+}
+.contenedor {
+  display: flex;
+  height: 80px;
+  width: 770px;
+  color: blueviolet;
+}
