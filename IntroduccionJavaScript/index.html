@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Materialize</title>
+</head>
+<body>
+  <div class="container-all-page" id="container-all-page">
+    <nav class="blue accent-2">
+      <div class="nav-wrapper container">
+        <a href="#" class="brand-logo">Nombre de la Tienda</a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li><a href=""><i class="material-icons left">person</i>Mi cuenta</a></li>
+          <li><a href=""><i class="material-icons left">shopping_cart</i>Carrito</a></li>
+        </ul>
+      </div>
+   </nav>
+   <div>
+      <nav class="blue accent-4">
+          <div class="nav-wrapper container">
+              <ul id="nav-mobile" class="hide-on-med-and-down">
+                  <li><a href=""><i class="material-icons left">menu</i>Todas las categorías</a></li>
+                  <li><a href="">Móviles</a></li>
+                  <li><a href="">Portátiles</a></li>
+                  <li><a href="">Consolas</a></li>
+                  <li><a href="">Electrodomésticos</a></li>
+                  <li><a href="">Videojuegos</a></li>
+                  <li><a href="">Sobremesas</a></li>
+                  <li><a href="">Ofertas</a></li>
+              </ul>
+          </div>
+       </nav>
+   </div>
+  
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col s4">
+              <div class="card">
+                <div class="card-image">
+                  <img src="img/xiaomi.png">
+                </div>
+                <div class="card-content center-align">
+                  <h5>Xiaomi Mi 10T</h5>
+                </div>
+                <div class="card-action center-align">
+                    <a class="waves-effect waves-light btn">Comprar</a>
+                </div>
+              </div>
+            </div>
+            <div class="col s4">
+                <div class="card">
+                  <div class="card-image">
+                    <img src="img/iphone13.png">
+                  </div>
+                  <div class="card-content center-align">
+                    <h5>Iphone 13 Pro Max</h5>
+                  </div>
+                  <div class="card-action center-align">
+                      <a class="waves-effect waves-light btn">Comprar</a>
+                  </div>
+                </div>
+            </div>
+            <div class="col s4">
+                <div class="card">
+                  <div class="card-image">
+                    <img src="img/oppo.webp">
+                  </div>
+                  <div class="card-content center-align">
+                    <h5>Oppo Find X5</h5>
+                  </div>
+                  <div class="card-action center-align">
+                      <a class="waves-effect waves-light btn">Comprar</a>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="introduccion-js container">
+      <div class="row">
+        <form class="col s12">
+          <div class="row">
+            <p><b>Introducción a JavaScript</b></p>
+            <div class="input-field col s12">
+              <textarea id="textarea1" class="materialize-textarea"></textarea>
+              <label for="textarea1">Escribe aquí tu texto</label>
+            </div>
+          </div>
+        </form>
+        <a class="waves-effect waves-light btn" onclick="showText()">Mostrar texto</a>
+      </div>
+      <div class="texto-introducido"  style="margin-bottom: 50px;">
+        <!-- aparecerá dinámicamente -->
+      </div>
+      
+      <div class="datos-introducidos">
+        <p><b>Información del cliente:</b></p>
+        <div class="input-field col s6">
+          <input placeholder="DNI" id="dni" type="text" class="validate">
+        </div>
+        <div class="input-field col s6">
+          <input placeholder="Año de nacimiento" id="nacimiento" type="text" class="validate">
+        </div>
+        <div class="input-field col s6">
+          <input placeholder="Numero de cuenta" id="num-cuenta" type="text" class="validate">
+        </div>
+        <div class="input-field col s6">
+          <input min="0" max="100" placeholder="% Descuento" id="descuento" type="number" class="validate">
+        </div>
+        <div class="input-field col s12">
+          <p><b>Método de pago:</b></p>
+          <select class="browser-default" id="mod-pago">
+            <option value="Tarjeta" selected>Tarjeta</option>
+            <option value="Paypal">PayPal</option>
+            <option value="Credito">Credito</option>
+            <option value="Transferencia">Transferencia</option>
+          </select>
+        </div>
+        <div class="opciones-compra">
+          <p>
+            <label>
+              <input type="checkbox" id="samsung" value="samsung_checkbox" class="filled-in"/>
+              <span>Samsung S21 <b>830€</b></span>
+            </label><br>
+            <label>
+              <input type="checkbox" id="iphone" value="iphone_checkbox" class="filled-in"/>
+              <span>Iphone 13 <b>1100€</b></span>
+            </label><br>
+            <label>
+              <input type="checkbox" id="xiaomi" value="xiaomi_checkbox" class="filled-in"/>
+              <span>Xiaomi Mi T10 <b>950€</b></span>
+            </label><br>
+          </p>
+        </div>
+        <a class="waves-effect waves-light btn" style="margin-bottom: 50px;" onclick="pagarCompra()">Pagar</a>
+      </div>
+      <div class="resumen-compra">
+        <!-- resumen compra dinámicamente -->
+      </div>
+
+      <a class="waves-effect waves-light btn" onclick="contarLabels()">Contar etiquetas</a>
+      <div class="num-etiquetas" style="margin-bottom: 50px;">
+        <!-- aparecerá dinámicamente -->
+      </div>
+    </div>
+    <footer class="page-footer grey darken-2">
+        <div class="container">
+          <div class="row">
+            <div class="col l6 s12">
+              <h5 class="white-text">Footer</h5>
+              <p class="grey-text text-lighten-4">Página creada por el Grupo 10 de UYA</p>
+              <h4>Integrantes:</h4>
+              <p>Jeff Pérez Frade</p>
+              <p>Diego Rodríguez Pérez</p>
+            </div>
+          </div>
+        </div>
+        <div class="footer-copyright">
+          <div class="container">
+          © 2022 Copyright Text
+          <a class="grey-text text-lighten-4 right" href="#!">Otros Enlaces</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>     
+    <script src="script.js"></script>
+  </body>
+</html>
