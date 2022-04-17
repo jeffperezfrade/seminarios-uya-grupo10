@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"> -->
+    <link rel="shortcut icon" href="#">
+    <title>Informacion de pago</title>
+    <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-firestore.js"></script>
+    <!-- sweet alert CDN -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body>
+    <div class="container-all-page" id="container-all-page">
+        <nav class="blue accent-2">
+            <div class="nav-wrapper container">
+                <a href="../index.html" class="brand-logo">FUTURA</a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href=""><i class="material-icons left">person</i>Mi cuenta</a></li>
+                    <li><a href=""><i class="material-icons left">shopping_cart</i>Carrito</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div>
+            <nav class="blue accent-4">
+                <div class="nav-wrapper container">
+                    <ul id="nav-mobile" class="hide-on-med-and-down">
+                        <li><a href=""><i class="material-icons left">menu</i>Todas las categorías</a></li>
+                        <li><a href="">Móviles</a></li>
+                        <li><a href="">Portátiles</a></li>
+                        <li><a href="">Consolas</a></li>
+                        <li><a href="">Electrodomésticos</a></li>
+                        <li><a href="">Videojuegos</a></li>
+                        <li><a href="">Sobremesas</a></li>
+                        <li><a href="">Ofertas</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="container">
+            <div class="section">
+                <div class=center>
+                    <h3>Formulario para actualizar la Información de pago</h3>
+                    <p>Este formulario se enviará a una colección de <b>Firebase</b></p>
+                </div>
+                <div class="row">
+                    <div class="row">
+                        <div class="input-field col s12 m6 l6">
+                            <input type="text" placeholder="DNI" id="dni" class="validate" required>
+                        </div>
+                        <div class="input-field col s12 m6 l6">
+                            <input type="number" placeholder="Año de nacimiento" id="nacimiento" class="validate"
+                                required>
+                        </div>
+                        <div class="input-field col s12 m6 l12">
+                            <input type="number" placeholder="Numero de cuenta" id="num-cuenta" class="validate"
+                                required>
+                        </div>
+                        <div class="input-field col s12 m6 l6">
+                            <input type="number" placeholder="% Descuento" id="descuento" class="validate" required>
+                        </div>
+                        <div class="input-field col s12 m6 l6">
+                            <select class="browser-default" id="met-pago">
+                                <option value="" disabled selected>Metodo de pago</option>
+                                <option value="tarjeta">Tarjeta</option>
+                                <option value="paypal">PayPal</option>
+                                <option value="credito">Credito</option>
+                            </select>
+                        </div>
+                    </div>
+                    <button id="btn-save" class="waves-effect waves-light blue accent-4 btn" name="action">Guardar
+                        Informacion de pago<i class="material-icons right">account_balance_wallet</i></button>
+                </div>
+            </div>
+        </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer"></script>
+<script src="firebase.js"></script>
+
+</html>

@@ -1,0 +1,42 @@
+[
+    {
+        "id": 1,
+        "name": "Eliseo",
+        "email": "Eliseo@gardner.biz",
+        "numCuenta": 1223456789,
+        "nacimiento": 1995,
+        "modPago": "Tarjeta"
+    },
+    {
+        "id": 2,
+        "name": "Pepe",
+        "email": "Pepe@gardner.biz",
+        "numCuenta": 1223456789,
+        "nacimiento": 1969,
+        "modPago": "PayPal"
+    },
+    {
+        "id": 3,
+        "name": "Juan",
+        "email": "Juan@gardner.biz",
+        "numCuenta": 1223456789,
+        "nacimiento": 2000,
+        "modPago": "Credito"
+    },
+    {
+        "id": 4,
+        "name": "Santiago",
+        "email": "Santiago@gardner.biz",
+        "numCuenta": 1223456789,
+        "nacimiento": 1999,
+        "modPago": "Tarjeta"
+    },
+    {
+        "id": 5,
+        "name": "Jaime",
+        "email": "Jaime@gardner.biz",
+        "numCuenta": 1223456789,
+        "nacimiento": 1999,
+        "modPago": "Tarjeta"
+    }
+]
