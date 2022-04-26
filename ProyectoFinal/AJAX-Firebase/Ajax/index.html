@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js">
+    <title>Tienda</title>
+</head>
+<body>
+  <div class="container-all-page" id="container-all-page">
+    <nav class="blue accent-2">
+      <div class="nav-wrapper container">
+        <a href="#" class="brand-logo">FUTURA</a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li><a href=""><i class="material-icons left">person</i>Mi cuenta</a></li>
+          <li><a href=""><i class="material-icons left">shopping_cart</i>Carrito</a></li>
+        </ul>
+      </div>
+   </nav>
+   <div>
+      <nav class="blue accent-4">
+          <div class="nav-wrapper container">
+              <ul id="nav-mobile" class="hide-on-med-and-down">
+                  <li><a href=""><i class="material-icons left">menu</i>Todas las categorías</a></li>
+                  <li><a href="">Móviles</a></li>
+                  <li><a href="">Portátiles</a></li>
+                  <li><a href="">Consolas</a></li>
+                  <li><a href="">Electrodomésticos</a></li>
+                  <li><a href="">Videojuegos</a></li>
+                  <li><a href="">Sobremesas</a></li>
+                  <li><a href="">Ofertas</a></li>
+              </ul>
+          </div>
+       </nav>
+   </div>
+    <div class="container">
+      <h3>Cargar JSON con AJAX</h3>
+      <p>Al introducir el año de nacimiento, se devuelven las personas que hayan nacido en ese año mediante la utilización de <b>AJAX y JQuery</b>.</p>
+      <div class="row">
+        <form class="col s12 m10 l8">
+          <div class="row">
+            <div class="input-field col s12 m10 l8">
+              <input id="input-nacimiento" name="nacimiento" type="number" placeholder="Introduce el año de nacimiento" class="validate" required>     <!-- PARA VALIDAR LA ENTRADA VI QUE TAMBIEN SE PUEDE HACER CON HTML EN ESTA PAGINA: https://developer.mozilla.org/es/docs/Learn/Forms/Form_validation-->
+            </div>
+          </div>
+        </form> 
+      </div>
+    </div>
+    <div class="container">
+        <button id="boton" class="btn waves-effect waves-light blue accent-4" type="submit" name="action">Obtener Personas<i class="material-icons right">send</i></button>
+    </div>
+    <div class="container">
+        <p id="resultado"></p>
+    </div>
+    <footer class="page-footer grey darken-2">
+        <div class="container">
+          <div class="row">
+            <div class="col l6 s12">
+              <h5 class="white-text">Footer</h5>
+              <p class="grey-text text-lighten-4">Página creada por el Grupo 10 de UYA</p>
+              <h5>Integrantes:</h5>
+              <p><b>Jeff Pérez Frade</b></p>
+              <p><b>Diego Rodríguez Pérez</b></p>
+            </div>
+          </div>
+        </div>
+        <div class="footer-copyright">
+          <div class="container">
+          © 2022 Copyright Text
+          <a class="grey-text text-lighten-4 right" href="#!">Otros Enlaces</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>     
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="ajax.js"></script>
+  </body>
+</html>
